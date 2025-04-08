@@ -9,10 +9,12 @@ En esta actividad construiremos una escena en Unity en la que un **avión vuela 
 
 1. Abre Unity y dirígete al menú superior:  
    `Window > Asset Store (o abrir desde navegador)`
+   ![Imagen Unity Assets Store](https://drive.google.com/uc?id=1hDez1Hw1wtYSUvjCid_VpKDmrwad7S19)
 2. Busca y descarga los siguientes elementos:
    - ✈️ Un modelo de **avión**
    - 🏢 Un **edificio** o torre
    - 💥 Un **efecto de explosión** (con partículas y sonido si es posible)
+   ![Imagen Unity Assets Store](https://drive.google.com/uc?id=1lqMXWH6CwPAQB8nzItA3UyAd_AojO7FJ)
 3. Una vez descargados, haz clic en **Importar** para agregarlos a tu proyecto.
 
 ---
@@ -21,6 +23,7 @@ En esta actividad construiremos una escena en Unity en la que un **avión vuela 
 
 - Asegúrate de que todos los assets estén visibles en la carpeta `Assets/`.
 - Si es necesario, crea una nueva carpeta llamada `Models` o `Prefabs` para mantener todo organizado.
+![Imagen Unity Assets Store](https://drive.google.com/uc?id=1GWu6h4dFGatGtuDqTRQLi1tLDGrD2XUI)
 
 ---
 
@@ -28,6 +31,7 @@ En esta actividad construiremos una escena en Unity en la que un **avión vuela 
 
 1. Arrastra el modelo del **avión** desde el panel de proyecto a la jerarquía de la escena.
 2. Asegúrate de que esté bien orientado (eje **Z hacia adelante**).
+![Imagen Unity Assets Store](https://drive.google.com/uc?id=1Jt6YmElfxLAfmWwF6-pr5S-unH_DOqYg)
 
 ---
 
@@ -36,18 +40,21 @@ En esta actividad construiremos una escena en Unity en la que un **avión vuela 
 1. Selecciona el avión en la jerarquía.
 2. En el `Inspector`, haz clic en **Add Component**.
 3. Busca y añade un **Box Collider**.
+![Imagen Unity Assets Store](https://drive.google.com/uc?id=1s0YVmQXC1-cgWYw5CKIMDtEsJIypGn88)
 
 ---
 
 ## 🏢 Paso 5: Importar el Edificio a la Escena
 
 - Arrastra el modelo del edificio a la escena y colócalo delante del avión (a una buena distancia para que el avión tenga tiempo de volar hacia él).
+![Imagen Unity Assets Store](https://drive.google.com/uc?id=1xw9To8htRKlXj1ToJObI2VAlFjcwGvVb)
 
 ---
 
 ## 🧱 Paso 6: Añadir un Box Collider al Edificio
 
 - Igual que con el avión, selecciona el edificio y añade un **Box Collider** desde el `Inspector`.
+![Imagen Unity Assets Store](https://drive.google.com/uc?id=1K_BNm-Lo6cRrhmV2mTbV8QKnmlKpcJb1)
 
 ---
 
@@ -56,6 +63,7 @@ En esta actividad construiremos una escena en Unity en la que un **avión vuela 
 1. Selecciona el edificio.
 2. Haz clic en **Add Component > Rigidbody**.
 3. En el `Inspector`, marca la opción ✅ `Is Kinematic` para que no se mueva al colisionar.
+![Imagen Unity Assets Store](https://drive.google.com/uc?id=15QfuirkB938egdzVfwYD4GbBhj7zSwaS)
 
 ---
 
@@ -82,6 +90,7 @@ public class AvionMovimiento : MonoBehaviour
 ### 2. Asignar el script
 
 - Asigna el script al avión desde el `Inspector`.
+![Imagen Unity Assets Store](https://drive.google.com/uc?id=1SWGHeAbuUMwixkyAG9lilciNnqXyMc8V)
 
 ---
 
@@ -110,6 +119,8 @@ public class SeguirCamara : MonoBehaviour
 2. Asigna este script a la cámara.
 3. En el campo `Objetivo`, arrastra el avión.
 4. Ajusta el `Offset` si quieres un ángulo diferente.
+
+![Imagen Unity Assets Store](https://drive.google.com/uc?id=1XTEQvyK93So8xgIcaYOHvs4U7-G7pBJd)
 
 ---
 
@@ -152,6 +163,8 @@ public class ColisionExplosion : MonoBehaviour
     }
 }
 ```
+
+![Imagen Unity Assets Store](https://drive.google.com/uc?id=17geN4EV7IqeDQQGqR5SoTSKFHp5DIaKh)
 
 ### 3. Asignar elementos
 
